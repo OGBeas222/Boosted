@@ -1,0 +1,109 @@
+.shop
+  max-width: 1420px
+  margin: 0 auto
+  &__wrapper
+    justify-content: center
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+  &__title
+    margin: 0 auto
+    max-width: 400px
+    &--wrapper
+      display: flex
+
+      justify-content: center
+
+      flex-wrap: wrap
+.shops__title
+  font-family: Roboto
+  font-weight: bold
+  font-size: 32px
+  margin-bottom: 25px
+.underline
+  margin-bottom: 42px
+.items
+  height: 318px
+  max-width: 1420px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+.item
+  &__photo
+    width: 186px
+    height: 186px
+  &__1
+    height: 237px
+    width: 186px
+    &--wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+      flex-direction: column
+  &__name
+    width: 186px
+    font-family: Roboto,sans-serif
+    font-weight: normal
+    font-size: 14px
+    text-align: center
+    margin: 12px 0 3px 0
+    color: $orange
+  &__price
+
+    display: flex
+    justify-self: flex-start
+    font-family: Roboto,sans-serif
+    font-weight: normal
+    font-size: 14px
+    color: $dark
+
+    &--wrapper
+      display: inline-flex
+      justify-content: space-between
+      align-items: center
+    &--1
+      display: flex
+      justify-self: flex-end
+      font-family: Roboto,sans-serif
+      font-weight: normal
+      font-size: 14px
+      color: $orange
+      margin-left: 4px
+  &__out
+    font-family: Roboto,sans-serif
+    font-weight: normal
+    text-align: center
+    font-size: 14px
+    color: rgba(0, 0, 0, 0.3)
+.price
+  padding: 0 54px 0 54px
+  text-align: center
+.swiper
+  position: relative
+  width: 1400px
+  height: 300px
+.slider
+  &-button
+
+    position: absolute
+    top: 45%
+    z-index: 99
+    width: 44px
+    height: 44px
+    border: none
+    border-radius: 50%
+    background-repeat: no-repeat
+    background-position: center
+    background-color: $button
+
+    &--next
+      right: 10px
+      background-image: url(../img/arrow.svg)
+
+      transform: rotate(180deg)
+    &--prev
+      z-index: 111
+      left: 10px
+      background-image: url(../img/arrow.svg)
